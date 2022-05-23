@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "diponibilities",
+  "info": {
+    "singularName": "diponibility",
+    "pluralName": "diponibilities",
+    "displayName": "Diponibility"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "quantity": {
+      "type": "integer"
+    },
+    "pharmcy": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pharmcy.pharmcy"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pharmcies",
+  "info": {
+    "singularName": "pharmcy",
+    "pluralName": "pharmcies",
+    "displayName": "Pharmcy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "diponibilities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::diponibility.diponibility"
+    }
+  }
+}
